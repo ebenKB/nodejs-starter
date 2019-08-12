@@ -1,0 +1,47 @@
+{
+  "name": "nodejs-starter",
+  "version": "1.0.0",
+  "description": "Official description",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "linter": "npx eslint src/*.js",
+    "start-build": "npx eslint src/*.js && npm run build && node app.js ",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebenKB/regme-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "jwt"
+  ],
+  "author": "eben_kb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebenKB/regme-api/issues"
+  },
+  "homepage": "https://github.com/ebenKB/regme-api#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "jsonapi-serializer": "^3.6.4",
+    "mongoose": "^5.4.16"
+  }
+}
